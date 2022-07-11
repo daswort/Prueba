@@ -1,0 +1,12 @@
+Pregunta #10.8: Escriba una consulta que muestre el promedio de ventas por ciudades para cada  vendedor
+
+
+SELECT t1.Nombre, AVG(t2.CantPorCiudad) PromedioPorCiudad
+FROM Vendedores t1
+INNER JOIN (
+	SELECT ta.Vendedor, tb.Ciudad, COUNT(1) CantPorCiudad
+	FROM Ventas ta
+	INNER JOIN Clientes tb ON ta.Cliente = tb.Id
+GROUP BY ta.Vendedor, tb.Ciudad
+) t2 ON t1.Id = t2.Vendedor
+GROUP BY t1.Nombre

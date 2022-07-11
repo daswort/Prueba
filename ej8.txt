@@ -1,0 +1,6 @@
+Pregunta #8: Suponga la siguiente situación:
+Un cliente de nuestra empresa compra reiterativamente semana a semana, con despacho a diversos
+puntos de la región según necesite. En cada compra puede adquirir uno o más productos.
+Partiendo de lo anterior ¿Qué tipo de base de datos usaría?
+
+R: Usaría una base de datos relacional para mantener la unión entre el cliente y sus compras así como con sus despachos.

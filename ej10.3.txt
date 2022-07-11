@@ -1,0 +1,13 @@
+Pregunta #10.3: Suponiendo que es necesario enumerar los productos vendidos en una venta, sugiera las modificaciones que necesitaría en la tabla de Ventas y defina en caso de ser necesario  una tabla de productos vendidos. 
+
+R: Para realizar dicha modificación es necesario crear una tabla adicional que contenga el identificador del producto vendido y el identificador de la venta.
+
+Tabla Venta_Detalle
+Id (Entero autoincremental)
+Producto (Entero)
+Venta (Entero)
+Cantidad (Flotante)
+
+En la tabla Ventas habría que establecer una relación de 1 a muchos con la tabla Venta_Detalle (una Venta puede tener muchas Venta_Detalle).
+
+Así mismo la tabla Productos habría que establecer una relación de 1 a muchos con la tabla Venta_Detalle (Una Venta_Detalle puede tener muchos productos)

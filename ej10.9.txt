@@ -1,0 +1,8 @@
+Pregunta #10.9: Escriba una consulta que indique los datos del vendedor con mas ventas
+
+SELECT TOP 1 t2.Nombre, COUNT(1) AS CantVentas
+FROM Ventas t1
+INNER JOIN Vendedores t2 ON t1.Vendedor = t2.Id
+GROUP BY t2.Nombre
+ORDER BY COUNT(1) DESC
+

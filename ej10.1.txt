@@ -1,0 +1,3 @@
+Pregunta #10.1: ¿Que tipo de relación tiene la tabla Cliente con la Tabla Ventas? 
+
+R: Un Cliente tiene muchas Ventas

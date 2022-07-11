@@ -1,0 +1,10 @@
+Pregunta #10.6: Escriba una consulta que muestre el promedio de venta de los vendedores
+
+SELECT AVG(t2.CantVentas) AS PromedioVentasVendedores
+FROM Vendedores t1
+INNER JOIN (SELECT Vendedor, COUNT(1) AS CantVentas
+			FROM Ventas
+			GROUP BY Vendedor) t2 ON t1.Id = t2.Vendedor
+
+
+

@@ -1,0 +1,5 @@
+Pregunta #9: Suponga la siguiente situación 
+Se tienen múltiples usuarios que publican diariamente contenido en sus cuentas personales. El  contenido puede ser de diferentes tipos, texto, imagen, video, entre otros. además de esto, los  usuarios pueden interactuar entre si hacia sus publicaciones, comentando las publicaciones de otros  usuarios, o entregando una estrella a modo de apoyo al contenido de otros usuarios. 
+Partiendo de lo anterior ¿Qué tipo de base de datos usaría? 
+
+R: Una base de datos relacional

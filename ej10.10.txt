@@ -1,0 +1,7 @@
+ Pregunta #10.10: Escriba una consulta que indique la ciudad con mas ventas
+
+SELECT TOP 1 t2.Ciudad, COUNT(1) AS CantVentas
+FROM Ventas t1
+INNER JOIN Clientes t2 ON t1.Cliente = t2.Id
+GROUP BY t2.Ciudad
+ORDER BY COUNT(1) DESC

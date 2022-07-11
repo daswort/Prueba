@@ -1,0 +1,6 @@
+Pregunta #10.4: Escriba una consulta que muestre el monto total de ventas por área 
+
+SELECT t1.Area, Sum(t2.Monto) AS TotalPorArea
+FROM Vendedores t1
+INNER JOIN Ventas t2 ON t1.Id = t2.Vendedor
+GROUP BY t1.Area
